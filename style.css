@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url("image12.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    background-color: black;
+    background-image: url("image12.jpg");
+    padding: 10px 0;
+    border-bottom: solid 1px white;
+    font-family: fantasy;
+    z-index: 10;
+}
+
+.card {
+    background-color: black;
+    background-image: url("image12.jpg");
+    border: solid 3px white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 320px;
+    height: 330px;
+    position: absolute;
+    top: 6.5cm;
+    animation-name: animation1;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation1 {
+    from {background-image: url(image12.jpg);}
+    to {background-image: url(image11.jpg);}
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-decoration: dotted underline;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+input {
+    width: 40px;
+    height: 28px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: solid white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input:focus {
+    background-color: white;
+    color: black;
+    border-color: blue;
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-color: blue;
+}
+
+#displayWord {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: gray;
+    background-image: url(image12.jpg);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    bottom: 0px;
+    display: flex;
+    height: 3cm;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: dotted white;
+}
+
+button1 {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+p1 {
+    align-self: center;
+    color: white;
+}
