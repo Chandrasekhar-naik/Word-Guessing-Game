@@ -95,9 +95,7 @@ function guessLetter() {
 
     } 
 
-    document.getElementById("displayWord") 
-
-        .textContent = updatedDisplay; 
+    document.getElementById("displayWord").textContent = updatedDisplay; 
 
    
 
