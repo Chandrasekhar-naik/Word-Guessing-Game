@@ -26,7 +26,7 @@ console.log(selectedWord);
 
   
  
-let guessedlist = []; 
+let guessedword = []; 
 
   
 
@@ -44,12 +44,10 @@ document.getElementById("displayWord").textContent = displayWord;
 
 function guessLetter() { 
 
-    let inputElement =  
-
-        document.getElementById("letter-input"); 
+    let input=document.getElementById("letter-input"); 
  
 
-    if (!inputElement.value) { 
+    if (!input.value) { 
 
         alert("Empty Input box. Please add input letter"); 
 
@@ -59,20 +57,20 @@ function guessLetter() {
 
   
 
-    let letter = inputElement.value.toLowerCase(); 
+    let letter = input.value.toLowerCase(); 
 
-    inputElement.value = ""; 
+    input.value = ""; 
 
    
 
-    if (guessedlist.includes(letter)) { 
+    if (guessedword.includes(letter)) { 
 
         alert("You have already guessed that letter!"); 
 
         return; 
 
     } 
-    guessedlist.push(letter); 
+    guessedword.push(letter); 
 
 
     let updatedDisplay = ""; 
@@ -81,7 +79,7 @@ function guessLetter() {
 
     for (let i = 0; i < selectedWord.length; i++) { 
 
-        if (guessedlist.includes(selectedWord[i])) { 
+        if (guessedword.includes(selectedWord[i])) { 
 
             updatedDisplay += selectedWord[i] + " "; 
 
